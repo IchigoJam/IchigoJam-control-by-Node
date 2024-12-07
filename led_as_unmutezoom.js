@@ -4,9 +4,8 @@ import { sleep } from "./sleep.js";
 
 const ij = new IchigoJam();
 
-let state = false;
+let state = true;
 
-ij.led(false);
 for (;;) {
   const res = await isUnmuteZoom();
   console.log("isUnmute: " + res);
